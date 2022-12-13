@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --clr-primary-300: hsl(31, 77%, 52%);
+  --clr-primary-500: hsl(184, 100%, 22%);
+  --clr-primary-700: hsl(179, 100%, 13%);
+
+  --clr-neutral-transp-1: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-transp-2: hsl(0, 0%, 95%);
+
+  --fontfam-main: "Leksand Deca", serif;
+  --fontfam-accent: "Big Shoulders Display", serif;
+
+  --fontweight-regular: 400;
+  --fontweight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--fontfam-main);
+  font-weight: var(--fontweight-regular);
+  font-size: 1.5rem;
+  background-color: var(--clr-neutral-transp-2);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 1rem;
+}
+.container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.sedans {
+  background-color: var(--clr-primary-300);
+  padding: 3rem;
+}
+
+.sedans button {
+  color: var(--clr-primary-300);
+}
+.suvs {
+  background-color: var(--clr-primary-500);
+  padding: 3rem;
+}
+.suvs button {
+  color: var(--clr-primary-500);
+}
+.luxury {
+  background-color: var(--clr-primary-700);
+  padding: 3rem;
+}
+.luxury button {
+  color: var(--clr-primary-700);
+}
+img {
+  width: 45px;
+  height: 35px;
+}
+p {
+  color: var(--clr-neutral-transp-1);
+  margin-top: 2rem;
+  font-weight: var(--fontweight-regular);
+}
+
+.title {
+  color: var(--clr-neutral-transp-2);
+  font-family: var(--fontfam-accent);
+  text-transform: uppercase;
+  font-weight: var(--fontweight-regular);
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+
+.button {
+  width: 11rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: var(--fontweight-regular);
+  cursor: pointer;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.button:is(:hover, :focus) {
+  background-color: inherit;
+  color: var(--clr-neutral-transp-1);
+  border: solid 1px white;
+}
+
+@media screen and (min-width: 768px) {
+  .wraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+  }
+  .button {
+    margin-top: 12rem;
+  }
+}
