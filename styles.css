@@ -38,6 +38,7 @@ body {
   overflow: hidden;
   border-radius: 0.5rem;
 }
+
 .sedans {
   background-color: var(--clr-primary-300);
   padding: 3rem;
@@ -103,7 +104,6 @@ p {
   .wraper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 700px;
   }
   .button {
     margin-top: 12rem;
